@@ -7,7 +7,7 @@
         <th>Launch Date</th>
     </tr>
     <!-- 2b: using *ngFor to display satellite data in the table -->
-    <tr *ngFor="let satellite of satellites">
+    <tr *ngFor="let satellite of satellites" [class.stripes]="satellite.zebraStripe(satellites)">
        
         <td>{{satellite.name}}</td>
         <!--  3b: add style to highlight satellite type -->

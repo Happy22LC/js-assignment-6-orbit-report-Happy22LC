@@ -23,6 +23,10 @@ export class Satellite {
 		}
 		
    }
+   //bonus:function for zebra stripes
+   zebraStripe(array): boolean {
+    return array.indexOf(this) % 2 === 0;
+  }
 
 }
 
